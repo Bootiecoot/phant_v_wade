@@ -14,7 +14,9 @@ using UnityEngine;
 public class ShopOperations : MonoBehaviour
 {
     private string mouseState = "inactive";
-    public int plantInUse = 0;
+    public GameObject plantInUse;
+    public int plantCost = 0;
+    public GameObject player;
 
     // Start is called before the first frame update
     void Start()
@@ -27,21 +29,27 @@ public class ShopOperations : MonoBehaviour
     void Update()
     {
         
-        //if(MouseCursor)
+         
 
 
     }
 
     private void OnMouseDown()
     {
-        if (mouseState == "inactive")
+        var playerCurrentState = player.GetComponent<PlayerController>().playerState;
+
+        if (playerCurrentState == "inactive")
         {
-            mouseState = "active";
+            
+            player.GetComponent<PlayerController>().playerState = "active";
+            player.GetComponent<PlayerController>().selectedPlantCost = plantCost;
+            //player.GetComponent<PlayerController>().selectedPlant =
             print("now active");
         }
-        else if (mouseState == "active")
+        else if (playerCurrentState == "active")
         {
-            mouseState = "inactive";
+           
+            player.GetComponent<PlayerController>().playerState = "inactive";
             print("nolonger active");
         }
 
