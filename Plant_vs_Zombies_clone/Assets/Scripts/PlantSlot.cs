@@ -32,11 +32,14 @@ public class PlantSlot : MonoBehaviour
         var plantCost = player.GetComponent<PlayerController>().selectedPlantCost;
         var plantSelected = player.GetComponent<PlayerController>().selectedPlant;
 
+        print(playerSun);
+
         if (playerCurrentState == "active" && playerSun >= plantCost)
         {
             player.GetComponent<PlayerController>().playerState = "inactive";
             player.GetComponent<PlayerController>().sun -= plantCost;
             print("slot selected");
+            
         }
         
 
