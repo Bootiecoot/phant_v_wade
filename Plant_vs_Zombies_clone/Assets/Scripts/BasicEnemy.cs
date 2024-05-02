@@ -6,9 +6,9 @@ using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 
 /// <summary>
-/// Chenault, 
-/// 
-/// 
+/// Chenault, Joshua / Melin, Ryan
+/// 5/2/2024
+/// For basic and tough enemies.
 /// </summary>
 public class BasicEnemy : MonoBehaviour
 {
