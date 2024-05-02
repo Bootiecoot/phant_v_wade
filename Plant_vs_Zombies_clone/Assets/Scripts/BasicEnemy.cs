@@ -31,6 +31,6 @@ public class BasicEnemy : MonoBehaviour
 
         rb.velocity = -(Vector3.right * speed);
 
-
     }
+
 }
