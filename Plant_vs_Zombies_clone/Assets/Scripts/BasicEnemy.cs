@@ -5,6 +5,11 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UIElements;
 
+/// <summary>
+/// Chenault, 
+/// 
+/// 
+/// </summary>
 public class BasicEnemy : MonoBehaviour
 {
 

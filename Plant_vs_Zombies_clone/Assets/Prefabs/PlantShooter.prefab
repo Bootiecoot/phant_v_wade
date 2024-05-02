@@ -28,7 +28,7 @@ Transform:
   m_GameObject: {fileID: 2883182996544478394}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.75, z: 0}
+  m_LocalPosition: {x: -0.5, y: 1.5, z: 0}
   m_LocalScale: {x: 1.25, y: 1.25, z: 1.25}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -133,7 +133,7 @@ Transform:
   m_GameObject: {fileID: 4373710333953993414}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0.75, y: 1.75, z: 0}
+  m_LocalPosition: {x: 0.3, y: 1.5, z: 0}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -238,7 +238,7 @@ Transform:
   m_GameObject: {fileID: 4772738852096024461}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.4423018, y: 1.0625026, z: -4.5}
+  m_LocalPosition: {x: 2.5, y: 1.5, z: -4.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -259,6 +259,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 82853f125b1bee6458403234b0898aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectile: {fileID: 0}
+  firerate: 2
 --- !u!1 &9031496325050636052
 GameObject:
   m_ObjectHideFlags: 0
@@ -287,7 +289,7 @@ Transform:
   m_GameObject: {fileID: 9031496325050636052}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: 0}
+  m_LocalPosition: {x: -0.5, y: 0.75, z: 0}
   m_LocalScale: {x: 1, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

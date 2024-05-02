@@ -5,8 +5,7 @@ using UnityEngine;
 
 /// <summary>
 /// Chenault, Joshua / Melin, Ryan
-/// 
-/// 
+/// 5/1/2024
 /// This script is used by the shop prefab that tracks 
 /// 
 /// </summary>
@@ -17,23 +16,11 @@ public class ShopOperations : MonoBehaviour
     public GameObject plantInUse;
     public int plantCost = 0;
     public GameObject player;
+ 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-         
-
-
-    }
-
+    /// <summary>
+    /// When clicking on the shop is "equips" the plant to a manager script that slots and the shops pull from.
+    /// </summary>
     private void OnMouseDown()
     {
         var playerCurrentState = player.GetComponent<PlayerController>().playerState;
@@ -43,7 +30,7 @@ public class ShopOperations : MonoBehaviour
             
             player.GetComponent<PlayerController>().playerState = "active";
             player.GetComponent<PlayerController>().selectedPlantCost = plantCost;
-            //player.GetComponent<PlayerController>().selectedPlant =
+            player.GetComponent<PlayerController>().selectedPlant = plantInUse;
             print("now active");
         }
         else if (playerCurrentState == "active")
