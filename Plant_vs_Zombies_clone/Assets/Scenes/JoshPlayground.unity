@@ -617,6 +617,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4772738852096024461, guid: 19da8e2d6ff29244d8e0f9dc9094e5d9, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 3306451490063965843, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 4772738852096024461, guid: 19da8e2d6ff29244d8e0f9dc9094e5d9, type: 3}
       propertyPath: m_Name
       value: PlantShooter
       objectReference: {fileID: 0}

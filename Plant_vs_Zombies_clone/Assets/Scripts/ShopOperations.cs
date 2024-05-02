@@ -12,7 +12,6 @@ using UnityEngine;
 
 public class ShopOperations : MonoBehaviour
 {
-    private string mouseState = "inactive";
     public GameObject plantInUse;
     public int plantCost = 0;
     public GameObject player;
@@ -23,6 +22,8 @@ public class ShopOperations : MonoBehaviour
     /// </summary>
     private void OnMouseDown()
     {
+
+
         var playerCurrentState = player.GetComponent<PlayerController>().playerState;
 
         if (playerCurrentState == "inactive")
