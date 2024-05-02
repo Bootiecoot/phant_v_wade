@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2192402271511932251}
   - component: {fileID: 2589863971206458251}
   - component: {fileID: 2094353851499238903}
+  - component: {fileID: 7443889770073749689}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -105,3 +106,20 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &7443889770073749689
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3810984144433490588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b26f4ff565f8af4fa9adfae6258595c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerState: inactive
+  sun: 50
+  selectedPlant: {fileID: 0}
+  selectedPlantCost: 0
+  lives: 1
