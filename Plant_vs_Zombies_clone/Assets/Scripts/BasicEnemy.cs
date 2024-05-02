@@ -14,7 +14,7 @@ public class BasicEnemy : MonoBehaviour
 {
 
     public float speed = 5.0f;
-    public Transform target;
+    public float health = 10.0f;
     private Rigidbody rb;
 
 
