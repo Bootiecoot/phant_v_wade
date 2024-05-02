@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class EnemySpawner : MonoBehaviour
 {
-    public GameObject enemy;
+    public GameObject basicEnemy;
+    public GameObject hardEnemy;
     public GameObject spawnPointOne;
     public GameObject spawnPointTwo;
     public GameObject spawnPointThree;
@@ -12,6 +13,8 @@ public class EnemySpawner : MonoBehaviour
     public GameObject spawnPointFive;
     public float spawnDelay;
     public float spawnRate;
+    public float hardSpawnDelay;
+    public float hardSpawnRate;
 
     private Vector3 pointOne;
     private Vector3 pointTwo;
@@ -29,6 +32,7 @@ public class EnemySpawner : MonoBehaviour
         pointFive = spawnPointFive.transform.position;
 
         InvokeRepeating("SpawnEnemy", spawnDelay, spawnRate);
+        InvokeRepeating("SpawnHardEnemy", hardSpawnDelay, hardSpawnRate);
     }
 
     // Update is called once per frame
@@ -42,23 +46,49 @@ public class EnemySpawner : MonoBehaviour
         int randomNum = Random.Range(0, 5);
         if (randomNum == 0)
         {
-            Instantiate(enemy, pointOne, transform.rotation);
+            Instantiate(basicEnemy, pointOne, transform.rotation);
         }
         else if (randomNum == 1)
         {
-            Instantiate(enemy, pointTwo, transform.rotation);
+            Instantiate(basicEnemy, pointTwo, transform.rotation);
         }
         else if (randomNum == 2)
         {
-            Instantiate(enemy, pointThree, transform.rotation);
+            Instantiate(basicEnemy, pointThree, transform.rotation);
         }
         else if (randomNum == 3)
         {
-            Instantiate(enemy, pointFour, transform.rotation);
+            Instantiate(basicEnemy, pointFour, transform.rotation);
         }
         else if (randomNum == 4)
         {
-            Instantiate(enemy, pointFive, transform.rotation);
+            Instantiate(basicEnemy, pointFive, transform.rotation);
         }
     }
+
+    private void SpawnHardEnemy()
+    {
+        int randomNum = Random.Range(0, 5);
+        if (randomNum == 0)
+        {
+            Instantiate(hardEnemy, pointOne, transform.rotation);
+        }
+        else if (randomNum == 1)
+        {
+            Instantiate(hardEnemy, pointTwo, transform.rotation);
+        }
+        else if (randomNum == 2)
+        {
+            Instantiate(hardEnemy, pointThree, transform.rotation);
+        }
+        else if (randomNum == 3)
+        {
+            Instantiate(hardEnemy, pointFour, transform.rotation);
+        }
+        else if (randomNum == 4)
+        {
+            Instantiate(hardEnemy, pointFive, transform.rotation);
+        }
+    }
+
 }
