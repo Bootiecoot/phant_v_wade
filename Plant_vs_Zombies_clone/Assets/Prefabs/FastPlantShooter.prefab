@@ -253,6 +253,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5831386661012433263}
   - component: {fileID: 6397820812520571141}
+  - component: {fileID: 3010284971674715719}
   m_Layer: 0
   m_Name: FastPlantShooter
   m_TagString: Untagged
@@ -294,6 +295,19 @@ MonoBehaviour:
   projectile: {fileID: 4058699945511987167, guid: 5d11e7aa544260a4eac3de31cb49ac18, type: 3}
   firerate: 1
   spawnPoint: {fileID: 1231569480614926595}
+--- !u!114 &3010284971674715719
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4772738852096024461}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c250873e3263fa47ace6d235fcde7fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
 --- !u!1 &9031496325050636052
 GameObject:
   m_ObjectHideFlags: 0
