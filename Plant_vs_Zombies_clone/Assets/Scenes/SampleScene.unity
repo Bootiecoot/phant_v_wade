@@ -12205,10 +12205,10 @@ MonoBehaviour:
   spawnPointThree: {fileID: 1165968646}
   spawnPointFour: {fileID: 1299162590}
   spawnPointFive: {fileID: 745425944}
-  spawnDelay: 5
+  spawnDelay: 20
   spawnRate: 5
-  hardSpawnDelay: 1
-  hardSpawnRate: 7
+  hardSpawnDelay: 40
+  hardSpawnRate: 8
 --- !u!65 &1099711473
 BoxCollider:
   m_ObjectHideFlags: 0
