@@ -11,10 +11,13 @@ public class EnemySpawner : MonoBehaviour
     public GameObject spawnPointThree;
     public GameObject spawnPointFour;
     public GameObject spawnPointFive;
+    
     public float spawnDelay;
     public float spawnRate;
     public float hardSpawnDelay;
     public float hardSpawnRate;
+    public int spawnAmount;
+    public int hardSpawnAmount;
 
     private Vector3 pointOne;
     private Vector3 pointTwo;
@@ -34,18 +37,21 @@ public class EnemySpawner : MonoBehaviour
         InvokeRepeating("SpawnEnemy", spawnDelay, spawnRate);
         InvokeRepeating("SpawnHardEnemy", hardSpawnDelay, hardSpawnRate);
 
-        StartCoroutine(destroyTimer());
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (spawnAmount == 1 && hardSpawnAmount == 1)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void SpawnEnemy()
     {
             int randomNum = Random.Range(0, 5);
+            spawnAmount += 1;
             if (randomNum == 0)
             {
                 Instantiate(basicEnemy, pointOne, transform.rotation);
@@ -72,6 +78,7 @@ public class EnemySpawner : MonoBehaviour
     private void SpawnHardEnemy()
     {
         int randomNum = Random.Range(0, 5);
+        hardSpawnAmount += 1;
         if (randomNum == 0)
         {
             Instantiate(hardEnemy, pointOne, transform.rotation);
@@ -92,13 +99,6 @@ public class EnemySpawner : MonoBehaviour
         {
             Instantiate(hardEnemy, pointFive, transform.rotation);
         }
-    }
-
-    IEnumerator destroyTimer()
-    {
-        yield return new WaitForSeconds(10);
-
-        Destroy(gameObject);
     }
 
 }

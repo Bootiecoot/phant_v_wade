@@ -18,7 +18,13 @@ public class PlayerController : MonoBehaviour
     public GameObject selectedPlant;
     public int selectedPlantCost = 0;
     public int lives = 1;
+    public GameObject nextSpawner;
 
+    public void Start()
+    {
+        StartCoroutine(newLevel());
+
+    }
 
     public void Death()
     {
@@ -28,6 +34,13 @@ public class PlayerController : MonoBehaviour
             SceneManager.LoadScene(1);
         }
 
+    }
+
+    IEnumerator newLevel()
+    {
+        yield return new WaitForSeconds(4);
+
+        Instantiate(nextSpawner);
     }
 
 }
