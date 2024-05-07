@@ -10,7 +10,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5708966017069704621}
   - component: {fileID: 448906260836527269}
-  m_Layer: 0
+  - component: {fileID: 9202884870113369478}
+  - component: {fileID: 2432731953046795186}
+  m_Layer: 3
   m_Name: SunFlower
   m_TagString: Untagged
   m_Icon: {fileID: 2488908585195742037, guid: 0000000000000000d000000000000000, type: 0}
@@ -49,6 +51,40 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   point: {fileID: 5969250815541100882}
   sunObject: {fileID: 3602666276755302317, guid: 9627a300648d02848813c1a082f2f073, type: 3}
+--- !u!114 &9202884870113369478
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4288364412927098582}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c250873e3263fa47ace6d235fcde7fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 5
+--- !u!65 &2432731953046795186
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4288364412927098582}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1, y: 2, z: 1}
+  m_Center: {x: 0, y: 1.31, z: 0}
 --- !u!1 &5969250815541100882
 GameObject:
   m_ObjectHideFlags: 0
@@ -58,7 +94,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6349852358252268508}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Point
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -92,7 +128,7 @@ GameObject:
   - component: {fileID: 4642859315739776102}
   - component: {fileID: 7145413720572559727}
   - component: {fileID: 1065849871724160532}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -199,7 +235,7 @@ GameObject:
   - component: {fileID: 1421935941320817237}
   - component: {fileID: 2845683338301801472}
   - component: {fileID: 330579682388049325}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

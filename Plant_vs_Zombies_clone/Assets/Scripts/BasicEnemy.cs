@@ -15,7 +15,9 @@ public class BasicEnemy : MonoBehaviour
 
     public float speed = 5.0f;
     public float health = 10.0f;
+    private bool canMove = true;
     private Rigidbody rb;
+    private GameObject target;
 
 
     // Start is called before the first frame update
@@ -29,8 +31,50 @@ public class BasicEnemy : MonoBehaviour
     {
         float step = speed * Time.deltaTime;
 
-        rb.velocity = -(Vector3.right * speed);
+        if (canMove == true)
+        {
+            rb.velocity = -(Vector3.right * speed);
+        }
+        else
+        {
+            rb.velocity = -(Vector3.right * 0);
+        }
+       
 
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        // this sees if the hit box is connecting with a plant, then sees if it can even be damaged.
+
+
+        if (other.GetComponent<PlantHp>() != null)
+        {
+            Debug.Log("triggerd");
+            
+            canMove = false;
+            target = other.gameObject;
+            
+            StartCoroutine(attackTimer());
+        }
+
+    }
+
+    IEnumerator attackTimer()
+    {
+        yield return new WaitForSeconds(0.5f);
+
+
+        if (target != null)
+        {
+            target.GetComponent<PlantHp>().health--;
+            StartCoroutine(attackTimer());
+        }
+        else
+        {
+            canMove = true;
+        }
+       
     }
 
 }
