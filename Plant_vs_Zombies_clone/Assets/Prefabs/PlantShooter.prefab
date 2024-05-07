@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6048254223888026586}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: spawn_point
   m_TagString: Untagged
   m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
@@ -42,7 +42,7 @@ GameObject:
   - component: {fileID: 1917744822403871716}
   - component: {fileID: 7887097849578919852}
   - component: {fileID: 1413631427370000079}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Sphere
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -125,7 +125,7 @@ GameObject:
   - component: {fileID: 574308247220977142}
   - component: {fileID: 8351799587044808601}
   - component: {fileID: 4638786078467019755}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -209,7 +209,7 @@ GameObject:
   - component: {fileID: 6397820812520571141}
   - component: {fileID: 3610856774672942578}
   - component: {fileID: 466643887311564760}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: PlantShooter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -278,7 +278,7 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
@@ -295,7 +295,7 @@ GameObject:
   - component: {fileID: 1358754592198111183}
   - component: {fileID: 824092209537920561}
   - component: {fileID: 6566199649201424177}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
   m_Icon: {fileID: 0}
