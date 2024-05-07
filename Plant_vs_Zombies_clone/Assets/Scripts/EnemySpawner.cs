@@ -33,6 +33,8 @@ public class EnemySpawner : MonoBehaviour
 
         InvokeRepeating("SpawnEnemy", spawnDelay, spawnRate);
         InvokeRepeating("SpawnHardEnemy", hardSpawnDelay, hardSpawnRate);
+
+        StartCoroutine(destroyTimer());
     }
 
     // Update is called once per frame
@@ -43,27 +45,28 @@ public class EnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-        int randomNum = Random.Range(0, 5);
-        if (randomNum == 0)
-        {
-            Instantiate(basicEnemy, pointOne, transform.rotation);
-        }
-        else if (randomNum == 1)
-        {
-            Instantiate(basicEnemy, pointTwo, transform.rotation);
-        }
-        else if (randomNum == 2)
-        {
-            Instantiate(basicEnemy, pointThree, transform.rotation);
-        }
-        else if (randomNum == 3)
-        {
-            Instantiate(basicEnemy, pointFour, transform.rotation);
-        }
-        else if (randomNum == 4)
-        {
-            Instantiate(basicEnemy, pointFive, transform.rotation);
-        }
+            int randomNum = Random.Range(0, 5);
+            if (randomNum == 0)
+            {
+                Instantiate(basicEnemy, pointOne, transform.rotation);
+            }
+            else if (randomNum == 1)
+            {
+                Instantiate(basicEnemy, pointTwo, transform.rotation);
+            }
+            else if (randomNum == 2)
+            {
+                Instantiate(basicEnemy, pointThree, transform.rotation);
+            }
+            else if (randomNum == 3)
+            {
+                Instantiate(basicEnemy, pointFour, transform.rotation);
+            }
+            else if (randomNum == 4)
+            {
+                Instantiate(basicEnemy, pointFive, transform.rotation);
+            }
+       
     }
 
     private void SpawnHardEnemy()
@@ -89,6 +92,13 @@ public class EnemySpawner : MonoBehaviour
         {
             Instantiate(hardEnemy, pointFive, transform.rotation);
         }
+    }
+
+    IEnumerator destroyTimer()
+    {
+        yield return new WaitForSeconds(10);
+
+        Destroy(gameObject);
     }
 
 }
