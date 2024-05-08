@@ -18,12 +18,33 @@ public class PlayerController : MonoBehaviour
     public GameObject selectedPlant;
     public int selectedPlantCost = 0;
     public int lives = 1;
-    public GameObject nextSpawner;
+    public GameObject firstSpawner;
+    public GameObject secondSpawner;
+    public EnemySpawner enemySpawner;
 
     public void Start()
     {
-        StartCoroutine(newLevel());
+        secondSpawner.SetActive(false);
 
+    }
+
+    public void Update()
+    {
+        if(enemySpawner.spawnAmount == 1 && enemySpawner.hardSpawnAmount == 1)
+        {
+            enemySpawner.spawnAmount = 0;
+            enemySpawner.hardSpawnAmount = 0;
+            enemySpawner.hardSpawnRate = 10;
+            enemySpawner.spawnRate = 10;
+        }
+
+        if (enemySpawner.spawnAmount == 2 && enemySpawner.hardSpawnAmount == 2)
+        {
+            enemySpawner.spawnAmount = 0;
+            enemySpawner.hardSpawnAmount = 0;
+            enemySpawner.hardSpawnRate = 20;
+            enemySpawner.spawnRate = 20;
+        }
     }
 
     public void Death()
@@ -36,11 +57,11 @@ public class PlayerController : MonoBehaviour
 
     }
 
-    IEnumerator newLevel()
+    IEnumerator newWave()
     {
         yield return new WaitForSeconds(4);
 
-        Instantiate(nextSpawner);
+        secondSpawner.SetActive(true);
     }
 
 }

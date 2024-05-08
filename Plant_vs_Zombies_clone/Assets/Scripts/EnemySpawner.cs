@@ -42,10 +42,7 @@ public class EnemySpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (spawnAmount == 1 && hardSpawnAmount == 1)
-        {
-            Destroy(gameObject);
-        }
+
     }
 
     private void SpawnEnemy()
