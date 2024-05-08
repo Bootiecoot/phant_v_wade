@@ -12742,6 +12742,22 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1132852263}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1133718367 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6642776048643216026, guid: 264f3d3e37b3c024485064fa2cc0f2d1, type: 3}
+  m_PrefabInstance: {fileID: 8569768533846003927}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1133718368 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3966920271069687188, guid: 264f3d3e37b3c024485064fa2cc0f2d1, type: 3}
+  m_PrefabInstance: {fileID: 8569768533846003927}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1133718367}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0b283de51d230eb46a0a4d2b30de61ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1141242731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20650,6 +20666,18 @@ PrefabInstance:
       propertyPath: nextSpawner
       value: 
       objectReference: {fileID: 6642776048643216026, guid: 264f3d3e37b3c024485064fa2cc0f2d1, type: 3}
+    - target: {fileID: 7443889770073749689, guid: b4254adf6924a774faf089966715ec8c, type: 3}
+      propertyPath: enemySpawner
+      value: 
+      objectReference: {fileID: 1133718368}
+    - target: {fileID: 7443889770073749689, guid: b4254adf6924a774faf089966715ec8c, type: 3}
+      propertyPath: firstSpawner
+      value: 
+      objectReference: {fileID: 1133718367}
+    - target: {fileID: 7443889770073749689, guid: b4254adf6924a774faf089966715ec8c, type: 3}
+      propertyPath: secondSpawner
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -24148,6 +24176,18 @@ PrefabInstance:
     - target: {fileID: 1501652806969719712, guid: 264f3d3e37b3c024485064fa2cc0f2d1, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966920271069687188, guid: 264f3d3e37b3c024485064fa2cc0f2d1, type: 3}
+      propertyPath: spawnRate
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966920271069687188, guid: 264f3d3e37b3c024485064fa2cc0f2d1, type: 3}
+      propertyPath: spawnDelay
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 3966920271069687188, guid: 264f3d3e37b3c024485064fa2cc0f2d1, type: 3}
+      propertyPath: hardSpawnDelay
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6642776048643216026, guid: 264f3d3e37b3c024485064fa2cc0f2d1, type: 3}
       propertyPath: m_Name
