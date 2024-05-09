@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 2116028035681166799}
   - component: {fileID: 5751809409817518464}
   - component: {fileID: 9179378206595503270}
+  - component: {fileID: 6654539674059808019}
   m_Layer: 0
   m_Name: Dark Green Slot
   m_TagString: Slot
@@ -105,3 +106,16 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6654539674059808019
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7784672366483056877}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: debd7c1818ffbdb44ab288d886bcddfb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
