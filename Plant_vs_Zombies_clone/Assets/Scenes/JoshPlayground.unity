@@ -250,15 +250,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6555599547773830615, guid: 0423c1879b5ed314bb88d1fd82c4affa, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6555599547773830615, guid: 0423c1879b5ed314bb88d1fd82c4affa, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 1.5
       objectReference: {fileID: 0}
     - target: {fileID: 6555599547773830615, guid: 0423c1879b5ed314bb88d1fd82c4affa, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -5.5
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6555599547773830615, guid: 0423c1879b5ed314bb88d1fd82c4affa, type: 3}
       propertyPath: m_LocalRotation.w
@@ -500,7 +500,9 @@ MonoBehaviour:
   selectedPlant: {fileID: 0}
   selectedPlantCost: 0
   lives: 1
-  nextSpawner: {fileID: 0}
+  firstSpawner: {fileID: 0}
+  secondSpawner: {fileID: 0}
+  enemySpawner: {fileID: 0}
 --- !u!1 &1046856408 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5485840699586729544, guid: a6c9c3d64c6c46642953fb8040acf350, type: 3}
