@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
         if(enemySpawner.spawnAmount == 10 && enemySpawner.hardSpawnAmount == 10)
         {
             DestroyImmediate(firstSpawner, true);
+            
             StartCoroutine(NewWave());
         }
 
@@ -57,7 +58,7 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator NewWave()
     {
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(1);
 
         SceneManager.LoadScene(1);
     }
