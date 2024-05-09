@@ -29,17 +29,13 @@ public class PlayerController : MonoBehaviour
 
     public void Update()
     {
-        if(enemySpawner.spawnAmount == 1 && enemySpawner.hardSpawnAmount == 1)
+        if(enemySpawner.spawnAmount == 10 && enemySpawner.hardSpawnAmount == 10)
         {
-            enemySpawner.spawnAmount = 0;
-            enemySpawner.hardSpawnAmount = 0;
-            enemySpawner.hardSpawnRate = 10;
-            enemySpawner.spawnRate = 10;
             DestroyImmediate(firstSpawner, true);
             StartCoroutine(NewWave());
         }
 
-        if (enemySpawner.spawnAmount == 2 && enemySpawner.hardSpawnAmount == 2)
+        /*if (enemySpawner.spawnAmount == 2 && enemySpawner.hardSpawnAmount == 2)
         {
             enemySpawner.spawnAmount = 0;
             enemySpawner.hardSpawnAmount = 0;
@@ -47,6 +43,7 @@ public class PlayerController : MonoBehaviour
             enemySpawner.spawnRate = 20;
             DestroyImmediate(secondSpawner, true);
         }
+        */
     }
 
     public void Death()
@@ -54,7 +51,7 @@ public class PlayerController : MonoBehaviour
         lives--;
         if(lives == 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(2);
         }
     }
 
@@ -62,7 +59,7 @@ public class PlayerController : MonoBehaviour
     {
         yield return new WaitForSeconds(4);
 
-        secondSpawner.SetActive(true);
+        SceneManager.LoadScene(1);
     }
 
 }
