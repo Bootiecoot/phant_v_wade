@@ -52,13 +52,13 @@ public class PlayerController : MonoBehaviour
         lives--;
         if(lives == 0)
         {
-            SceneManager.LoadScene(2);
+            SceneManager.LoadScene(3);
         }
     }
 
     IEnumerator NewWave()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(10);
 
         SceneManager.LoadScene(1);
     }
