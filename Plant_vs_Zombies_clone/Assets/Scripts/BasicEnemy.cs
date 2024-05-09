@@ -39,7 +39,12 @@ public class BasicEnemy : MonoBehaviour
         {
             rb.velocity = -(Vector3.right * 0);
         }
-       
+
+        if (health <= 0)
+        {
+
+            Destroy(gameObject);
+        }
 
     }
 
@@ -47,6 +52,12 @@ public class BasicEnemy : MonoBehaviour
     {
         // this sees if the hit box is connecting with a plant, then sees if it can even be damaged.
 
+        if (other.GetComponent<Projectile>() != null)
+        {
+
+            health -= 1;
+            Destroy(other.gameObject);
+        }
 
         if (other.GetComponent<PlantHp>() != null)
         {
@@ -57,6 +68,7 @@ public class BasicEnemy : MonoBehaviour
             
             StartCoroutine(attackTimer());
         }
+
 
     }
 
