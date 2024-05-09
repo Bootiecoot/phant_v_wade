@@ -25,7 +25,6 @@ public class PlayerController : MonoBehaviour
     public void Start()
     {
         secondSpawner.SetActive(false);
-
     }
 
     public void Update()
@@ -36,6 +35,8 @@ public class PlayerController : MonoBehaviour
             enemySpawner.hardSpawnAmount = 0;
             enemySpawner.hardSpawnRate = 10;
             enemySpawner.spawnRate = 10;
+            DestroyImmediate(firstSpawner, true);
+            StartCoroutine(NewWave());
         }
 
         if (enemySpawner.spawnAmount == 2 && enemySpawner.hardSpawnAmount == 2)
@@ -44,6 +45,7 @@ public class PlayerController : MonoBehaviour
             enemySpawner.hardSpawnAmount = 0;
             enemySpawner.hardSpawnRate = 20;
             enemySpawner.spawnRate = 20;
+            DestroyImmediate(secondSpawner, true);
         }
     }
 
@@ -54,10 +56,9 @@ public class PlayerController : MonoBehaviour
         {
             SceneManager.LoadScene(1);
         }
-
     }
 
-    IEnumerator newWave()
+    IEnumerator NewWave()
     {
         yield return new WaitForSeconds(4);
 
