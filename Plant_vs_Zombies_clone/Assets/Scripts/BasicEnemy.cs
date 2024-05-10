@@ -51,7 +51,7 @@ public class BasicEnemy : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         // this sees if the hit box is connecting with a plant, then sees if it can even be damaged.
-
+        Debug.Log("Detected Object");
         if (other.GetComponent<Projectile>() != null)
         {
 

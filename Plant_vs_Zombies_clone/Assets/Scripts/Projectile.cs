@@ -9,7 +9,7 @@ public class Projectile : MonoBehaviour
 
     void Start()
     {
-        StartCoroutine(destroyTimer());
+        
     }
 
     // Update is called once per frame
@@ -18,14 +18,6 @@ public class Projectile : MonoBehaviour
         transform.position += speed * Vector3.right * Time.deltaTime;
 
 
-    }
-
-
-    IEnumerator destroyTimer()
-    {
-        yield return new WaitForSeconds(10);
-
-        Destroy(gameObject);
     }
 
 }

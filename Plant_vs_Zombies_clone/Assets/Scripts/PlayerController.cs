@@ -35,16 +35,6 @@ public class PlayerController : MonoBehaviour
             
             StartCoroutine(NewWave());
         }
-
-        /*if (enemySpawner.spawnAmount == 2 && enemySpawner.hardSpawnAmount == 2)
-        {
-            enemySpawner.spawnAmount = 0;
-            enemySpawner.hardSpawnAmount = 0;
-            enemySpawner.hardSpawnRate = 20;
-            enemySpawner.spawnRate = 20;
-            DestroyImmediate(secondSpawner, true);
-        }
-        */
     }
 
     public void Death()
