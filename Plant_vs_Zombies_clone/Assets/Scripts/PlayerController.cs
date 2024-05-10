@@ -44,7 +44,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Level 2")
         {
-            if (enemySpawner.spawnAmount == 15 && enemySpawner.hardSpawnAmount == 10 && lv2EnemySpawner.teleportSpawnAmount == 5)
+            if (lv2EnemySpawner.spawnAmount == 15 && lv2EnemySpawner.hardSpawnAmount == 10 && lv2EnemySpawner.teleportSpawnAmount == 5)
             {
                 DestroyImmediate(secondSpawner, true);
 
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
         }
         else if (SceneManager.GetActiveScene().name == "Level 3")
         {
-            if (enemySpawner.spawnAmount == 20 && enemySpawner.hardSpawnAmount == 15 && lv2EnemySpawner.teleportSpawnAmount == 10)
+            if (lv2EnemySpawner.spawnAmount == 20 && lv2EnemySpawner.hardSpawnAmount == 15 && lv2EnemySpawner.teleportSpawnAmount == 10)
             {
                 DestroyImmediate(thirdSpawner, true);
 

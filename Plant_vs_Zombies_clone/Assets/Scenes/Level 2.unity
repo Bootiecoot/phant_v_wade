@@ -27861,6 +27861,10 @@ PrefabInstance:
       propertyPath: secondSpawner
       value: 
       objectReference: {fileID: 1133718367}
+    - target: {fileID: 7443889770073749689, guid: b4254adf6924a774faf089966715ec8c, type: 3}
+      propertyPath: lv2EnemySpawner
+      value: 
+      objectReference: {fileID: 1133718368}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
