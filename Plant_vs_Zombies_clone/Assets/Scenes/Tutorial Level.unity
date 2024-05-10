@@ -18265,11 +18265,11 @@ RectTransform:
   m_Children:
   - {fileID: 1665499057}
   - {fileID: 171842156}
-  m_Father: {fileID: 1692136888}
+  m_Father: {fileID: 1831165309}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -212.38748}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &1141242731
@@ -26554,7 +26554,6 @@ RectTransform:
   - {fileID: 2083940452}
   - {fileID: 942395606}
   - {fileID: 1831165309}
-  - {fileID: 1136057677}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -26582,6 +26581,8 @@ MonoBehaviour:
   thirdButton: {fileID: 345841076}
   fourthText: {fileID: 784210910}
   fourthButton: {fileID: 1704654004}
+  fifthText: {fileID: 1665499056}
+  fifthButton: {fileID: 171842155}
 --- !u!1001 &1692483037
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -29708,6 +29709,7 @@ RectTransform:
   - {fileID: 1855318382}
   - {fileID: 541340171}
   - {fileID: 1612003312}
+  - {fileID: 1136057677}
   m_Father: {fileID: 1692136888}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
