@@ -3,22 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// 
+/// 
+/// 
+/// </summary>
+
+
 public class MenuFunctions : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+   /// <summary>
+   /// 
+   /// </summary>
+   public void QuitGame()
     {
-        
+        Application.Quit();
+    } 
+
+
+    /// <summary>
+    /// 
+    /// </summary>
+    public void StartGame()
+    {
+
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
-
-
-
-
+   
 }

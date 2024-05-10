@@ -39,7 +39,7 @@ public class PlantSlot : MonoBehaviour
         if (slotSelected == false)
         {
             placeSelectedPlant();
-            slotSelected = true;
+            
         }
 
     }
@@ -62,6 +62,7 @@ public class PlantSlot : MonoBehaviour
             Instantiate(plantSelected, transform.position, transform.rotation);
 
             print("slot selected");
+            slotSelected = true;
 
         }
     }
