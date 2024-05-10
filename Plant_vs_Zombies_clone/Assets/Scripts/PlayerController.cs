@@ -19,12 +19,12 @@ public class PlayerController : MonoBehaviour
     public int selectedPlantCost = 0;
     public int lives = 1;
     public GameObject firstSpawner;
-    public GameObject secondSpawner;
+    
     public EnemySpawner enemySpawner;
 
     public void Start()
     {
-        secondSpawner.SetActive(false);
+        
     }
 
     public void Update()
