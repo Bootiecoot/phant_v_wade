@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlantHp : MonoBehaviour
 {
-
+    public GameObject spawnSlot;
     public int health = 5;
 
     // Update is called once per frame
@@ -13,6 +13,10 @@ public class PlantHp : MonoBehaviour
         if (health <= 0)
         {
             Destroy(gameObject);
+            if (spawnSlot != null)
+            {
+                spawnSlot.GetComponent<PlantSlot>().slotSelected = false;
+            }
         }
     }
 

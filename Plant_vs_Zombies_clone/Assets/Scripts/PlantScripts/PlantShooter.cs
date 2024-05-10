@@ -15,6 +15,7 @@ public class PlantShooter : MonoBehaviour
     public GameObject projectile;
     public float firerate = 2.0f;
     public GameObject spawnPoint;
+    
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +34,7 @@ public class PlantShooter : MonoBehaviour
 
         
         GameObject spawn = Instantiate(projectile, spawnPoint.transform.position ,transform.rotation);
+        spawn.GetComponent<PlantHp>().spawnSlot = gameObject;
        
     }
 }

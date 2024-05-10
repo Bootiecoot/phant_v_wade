@@ -16,7 +16,7 @@ public class PlantSlot : MonoBehaviour
 {
 
     public GameObject player;
-    private bool slotSelected = false;
+    public bool slotSelected = false;
     
 
 
