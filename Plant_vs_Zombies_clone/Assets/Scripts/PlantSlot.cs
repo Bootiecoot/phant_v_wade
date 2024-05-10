@@ -20,19 +20,6 @@ public class PlantSlot : MonoBehaviour
     
 
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-
-    }
-
     private void OnMouseDown()
     {
         
@@ -59,7 +46,8 @@ public class PlantSlot : MonoBehaviour
         {
             player.GetComponent<PlayerController>().playerState = "inactive";
             player.GetComponent<PlayerController>().sun -= plantCost;
-            Instantiate(plantSelected, transform.position, transform.rotation);
+            GameObject spawn = Instantiate(plantSelected, transform.position, transform.rotation);
+                spawn.GetComponent<PlantHp>().spawnSlot = gameObject;
 
             print("slot selected");
             slotSelected = true;

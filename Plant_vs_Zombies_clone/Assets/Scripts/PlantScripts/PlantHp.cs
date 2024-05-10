@@ -12,11 +12,13 @@ public class PlantHp : MonoBehaviour
     {
         if (health <= 0)
         {
-            Destroy(gameObject);
             if (spawnSlot != null)
             {
+                Debug.Log("reset slot");
                 spawnSlot.GetComponent<PlantSlot>().slotSelected = false;
             }
+            Destroy(gameObject);
+            
         }
     }
 

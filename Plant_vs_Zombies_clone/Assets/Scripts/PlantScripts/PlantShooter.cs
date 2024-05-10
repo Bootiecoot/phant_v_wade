@@ -34,7 +34,7 @@ public class PlantShooter : MonoBehaviour
 
         
         GameObject spawn = Instantiate(projectile, spawnPoint.transform.position ,transform.rotation);
-        spawn.GetComponent<PlantHp>().spawnSlot = gameObject;
+        
        
     }
 }
