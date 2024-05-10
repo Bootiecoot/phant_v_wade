@@ -8,6 +8,7 @@ public class Buttons : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+        print("Quit Game");
     }
 
     /// <summary>
