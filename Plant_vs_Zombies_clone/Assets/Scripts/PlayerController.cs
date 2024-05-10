@@ -29,7 +29,7 @@ public class PlayerController : MonoBehaviour
 
     public void Update()
     {
-        if(enemySpawner.spawnAmount == 10 && enemySpawner.hardSpawnAmount == 10)
+        if(enemySpawner.spawnAmount == 15 && enemySpawner.hardSpawnAmount == 10)
         {
             DestroyImmediate(firstSpawner, true);
             
@@ -48,9 +48,9 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator NewWave()
     {
-        yield return new WaitForSeconds(10);
+        yield return new WaitForSeconds(12);
 
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
 }

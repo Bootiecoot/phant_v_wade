@@ -19914,7 +19914,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7443889770073749689, guid: b4254adf6924a774faf089966715ec8c, type: 3}
       propertyPath: sun
-      value: 75
+      value: 50
       objectReference: {fileID: 0}
     - target: {fileID: 7443889770073749689, guid: b4254adf6924a774faf089966715ec8c, type: 3}
       propertyPath: nextSpawner
