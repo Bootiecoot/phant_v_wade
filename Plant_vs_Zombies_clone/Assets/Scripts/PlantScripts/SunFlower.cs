@@ -10,7 +10,7 @@ public class SunFlower : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("spawnSun", 6.0f , 12.0f);
+        InvokeRepeating("spawnSun", 6.0f , 15.0f);
     }
 
    

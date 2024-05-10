@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     public GameObject firstSpawner;
     
     public EnemySpawner enemySpawner;
+    public Level2EnemySpawner lv2EnemySpawner;
 
     public void Start()
     {
@@ -29,12 +30,26 @@ public class PlayerController : MonoBehaviour
 
     public void Update()
     {
-        if(enemySpawner.spawnAmount == 15 && enemySpawner.hardSpawnAmount == 10)
+        if (SceneManager.GetActiveScene().name == "Level 1")
         {
-            DestroyImmediate(firstSpawner, true);
-            
-            StartCoroutine(NewWave());
+            Debug.Log("Active Scene : " + SceneManager.GetActiveScene().name);
+            if (enemySpawner.spawnAmount == 15 && enemySpawner.hardSpawnAmount == 10)
+            {
+                DestroyImmediate(firstSpawner, true);
+
+                StartCoroutine(Level2());
+            }
         }
+        else if(SceneManager.GetActiveScene().name == "Level 2")
+        {
+            if (enemySpawner.spawnAmount == 15 && enemySpawner.hardSpawnAmount == 10 && lv2EnemySpawner.teleportSpawnAmount == 5)
+            {
+                DestroyImmediate(firstSpawner, true);
+
+                StartCoroutine(Level3());
+            }
+        }
+        
     }
 
     public void Death()
@@ -46,11 +61,18 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    IEnumerator NewWave()
+    IEnumerator Level2()
     {
         yield return new WaitForSeconds(12);
 
         SceneManager.LoadScene(2);
+    }
+
+    IEnumerator Level3()
+    {
+        yield return new WaitForSeconds(12);
+
+        SceneManager.LoadScene(3);
     }
 
 }
