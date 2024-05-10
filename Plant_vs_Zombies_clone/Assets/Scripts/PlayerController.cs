@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour
     public int selectedPlantCost = 0;
     public int lives = 1;
     public GameObject firstSpawner;
+    public GameObject secondSpawner;
+    public GameObject thirdSpawner;
     
     public EnemySpawner enemySpawner;
     public Level2EnemySpawner lv2EnemySpawner;
@@ -44,7 +46,7 @@ public class PlayerController : MonoBehaviour
         {
             if (enemySpawner.spawnAmount == 15 && enemySpawner.hardSpawnAmount == 10 && lv2EnemySpawner.teleportSpawnAmount == 5)
             {
-                DestroyImmediate(firstSpawner, true);
+                DestroyImmediate(secondSpawner, true);
 
                 StartCoroutine(Level3());
             }
@@ -53,7 +55,7 @@ public class PlayerController : MonoBehaviour
         {
             if (enemySpawner.spawnAmount == 20 && enemySpawner.hardSpawnAmount == 15 && lv2EnemySpawner.teleportSpawnAmount == 10)
             {
-                DestroyImmediate(firstSpawner, true);
+                DestroyImmediate(thirdSpawner, true);
 
                 StartCoroutine(End());
 
