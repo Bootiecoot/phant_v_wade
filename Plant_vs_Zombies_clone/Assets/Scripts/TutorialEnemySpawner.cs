@@ -34,7 +34,7 @@ public class TutorialEnemySpawner : MonoBehaviour
 
     private void SpawnEnemy()
     {
-      int randomNum = Random.Range(0, 5);
+      int randomNum = Random.Range(0, 1);
       spawnAmount += 1;
       if (randomNum == 0)
       {
@@ -45,7 +45,11 @@ public class TutorialEnemySpawner : MonoBehaviour
 
     private void SpawnHardEnemy()
     {
-        int randomNum = Random.Range(0, 5);
+        int randomNum = Random.Range(0, 1);
         hardSpawnAmount += 1;
+        if (randomNum == 0)
+        {
+            Instantiate(hardEnemy, pointOne, transform.rotation);
+        }
     }
 }

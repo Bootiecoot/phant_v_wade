@@ -53,4 +53,17 @@ public class Buttons : MonoBehaviour
         fourthButton.SetActive(true);
         fourthText.SetActive(true);
     }
+
+    public void OnButtonClickFourth()
+    {
+        fourthText.SetActive(false);
+        fourthButton.SetActive(false);
+    }
+
+    public void OnButtonClickFifth()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    
 }
