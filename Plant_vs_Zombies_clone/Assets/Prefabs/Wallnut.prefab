@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 1156552930642804481}
   - component: {fileID: 602675127278118526}
   - component: {fileID: -7925484177497107283}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Wallnut
   m_TagString: Untagged
   m_Icon: {fileID: 8418204508859773708, guid: 0000000000000000d000000000000000, type: 0}
@@ -80,7 +80,7 @@ GameObject:
   - component: {fileID: 3805518180295488831}
   - component: {fileID: 4869579118098385074}
   - component: {fileID: 2898784625300709687}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
