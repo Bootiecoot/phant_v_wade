@@ -26,7 +26,6 @@ public class PlantSlot : MonoBehaviour
         if (slotSelected == false)
         {
             placeSelectedPlant();
-            
         }
 
     }

@@ -5,6 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Buttons : MonoBehaviour
 {
+    public GameObject firstText;
+    public GameObject firstButton;
+    public GameObject secondText;
+    public GameObject secondButton;
+    public GameObject thirdText;
+    public GameObject thirdButton;
+    public GameObject fourthText;
+    public GameObject fourthButton;
     public void QuitGame()
     {
         Application.Quit();
@@ -18,5 +26,31 @@ public class Buttons : MonoBehaviour
     public void SwitchScene(int sceneIndex)
     {
         SceneManager.LoadScene(sceneIndex);
+    }
+
+    public void OnButtonClickFirst()
+    {
+        firstText.SetActive(false);
+        firstButton.SetActive(false);
+
+        secondButton.SetActive(true);
+        secondText.SetActive(true);
+    }
+
+    public void OnButtonClickSecond()
+    {
+        secondText.SetActive(false);
+        secondButton.SetActive(false);
+
+        thirdButton.SetActive(true);
+        thirdText.SetActive(true);
+    }
+    public void OnButtonClickThird()
+    {
+        thirdText.SetActive(false);
+        thirdButton.SetActive(false);
+
+        fourthButton.SetActive(true);
+        fourthText.SetActive(true);
     }
 }
