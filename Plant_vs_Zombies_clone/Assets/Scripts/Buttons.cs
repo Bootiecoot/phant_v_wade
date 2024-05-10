@@ -13,6 +13,8 @@ public class Buttons : MonoBehaviour
     public GameObject thirdButton;
     public GameObject fourthText;
     public GameObject fourthButton;
+    public GameObject fifthText;
+    public GameObject fifthButton;
     public void QuitGame()
     {
         Application.Quit();
@@ -58,6 +60,9 @@ public class Buttons : MonoBehaviour
     {
         fourthText.SetActive(false);
         fourthButton.SetActive(false);
+
+        fifthText.SetActive(true);
+        fifthButton.SetActive(true);
     }
 
     public void OnButtonClickFifth()
